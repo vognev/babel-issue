@@ -1,0 +1,16 @@
+{
+	"presets": [
+		["@babel/preset-env", {
+			"debug": false
+		}],
+		["@babel/preset-typescript", {
+			"debug": false
+		}]
+	],
+	"targets": {
+		"node": "current"
+	},
+	"plugins": [
+
+	]
+}

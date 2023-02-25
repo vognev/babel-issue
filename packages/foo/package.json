@@ -2,9 +2,15 @@
   "name": "foo-package",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
+  "scripts": {
+    "build": "babel src -x .ts --config-file ../../.babelrc -d dist --source-maps"
+  },
   "exports": {
     "./package.json": "./package.json",
-    "./*": "./src/*.js"
+    "./*": "./dist/*.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.1",
+    "typescript": "^4.9.5"
   }
 }
